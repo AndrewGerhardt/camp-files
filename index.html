@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camp Geiger Documents</title>
+
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #687782;
+      --border: #dde3ea;
+      --dark: #1f2933;
+      --accent: #7a4f26;
+      --accent-soft: #efe7dc;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wrap {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 26px;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .sub {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 720px;
+      line-height: 1.5;
+    }
+
+    .homeLink {
+      display: inline-block;
+      margin-top: 16px;
+      color: var(--dark);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .homeLink:hover {
+      text-decoration: underline;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    h2 {
+      margin: 0 0 4px;
+      font-size: 20px;
+    }
+
+    .section p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .docList {
+      display: grid;
+      gap: 10px;
+    }
+
+    .doc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #fff;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .doc:hover {
+      background: #f8fafc;
+    }
+
+    .docTitle {
+      font-weight: bold;
+    }
+
+    .docMeta {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 3px;
+    }
+
+    .badge {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 5px 9px;
+      font-size: 12px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 18px;
+      text-align: center;
+    }
+
+    @media (max-width: 750px) {
+      .wrap {
+        padding: 14px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .doc {
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Camp Geiger</div>
+      <h1>Camp Documents</h1>
+      <p class="sub">
+        Find current forms, guides, maps, and planning resources for Camp Geiger.
+        These files are provided as direct PDF links for easy viewing and downloading.
+      </p>
+      <a class="homeLink" href="https://www.campgeigerscouting.org/">← Back to CampGeigerScouting.org</a>
+    </header>
+
+    <div class="grid">
+      <section class="section">
+        <h2>2026 Summer Camp</h2>
+        <p>Leader resources and planning documents for summer camp.</p>
+
+        <div class="docList">
+          <a class="doc" href="2026/Leader-Guide.pdf">
+            <div>
+              <div class="docTitle">Leader Guide</div>
+              <div class="docMeta">Summer camp planning guide</div>
+            </div>
+            <span class="badge">PDF</span>
+          </a>
+
+          <a class="doc" href="2026/Camp-Map.pdf">
+            <div>
+              <div class="docTitle">Camp Map</div>
+              <div class="docMeta">Camp Geiger map</div>
+            </div>
+            <span class="badge">PDF</span>
+          </a>
+
+          <a class="doc" href="2026/Merit-Badge-Schedule.pdf">
+            <div>
+              <div class="docTitle">Merit Badge Schedule</div>
+              <div class="docMeta">Class times and program options</div>
+            </div>
+            <span class="badge">PDF</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Forms</h2>
+        <p>Common forms for Scouts, leaders, and families.</p>
+
+        <div class="docList">
+          <a class="doc" href="forms/BSA-Health-Form.pdf">
+            <div>
+              <div class="docTitle">BSA Health Form</div>
+              <div class="docMeta">Required medical form</div>
+            </div>
+            <span class="badge">PDF</span>
+          </a>
+
+          <a class="doc" href="forms/Medication-Form.pdf">
+            <div>
+              <div class="docTitle">Medication Form</div>
+              <div class="docMeta">Medication information form</div>
+            </div>
+            <span class="badge">PDF</span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      Geiger Talk Now • Pony Express Council • Camp Geiger
+    </footer>
+  </div>
+</body>
+</html>
